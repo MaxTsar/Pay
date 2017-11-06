@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+* {
+	box-sizing: border-box;
+	-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	font-family: 'PT Sans', 'Arial', sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: #FEFCF0;
+}
+
+.top-line {
+	display: flex;
+	margin-top: 15px;
+}
+
+.line {
+	margin-top: 20px;
+	width: 50%;
+	height: 1px;
+	background: #F65E27;
+}
+
+.decor {
+	margin: 10px 0;
+	text-align: center;
+}
+
+.decor-title {
+	margin-bottom: 5px;
+	font-size: 38px;
+}
+
+.decor-desc {
+	color: #6A6D6D;
+}
+
+.club-wrap {
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	text-align: center;
+	background: #EDF1F4;
+}
+
+.club-title {
+	margin-left: 10px;
+	font-size: 16px;
+}
+
+main,
+.footer-wrap,
+.club-wrap {
+	margin: 0 auto;
+	max-width: 900px;
+}
+
+.logic-section {
+	padding: 25px;
+	background: #fff;
+	border-bottom: 1px solid #EDF1F4;
+}
+
+.section-title {
+	margin: 0 0 25px 10px;
+	font-size: 18px;
+}
+
+.payments-wrap,
+.prolong-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.payment-card-wrap {
+	display: flex;
+}
+
+.payment-card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	min-width: 170px;
+	max-width: 170px;
+	min-height: 100px;
+	height: auto;
+	padding: 25px;
+	border: 1px dashed #333;
+	text-align: center;
+	transition: all .2s ease-in;
+	cursor: pointer;
+}
+
+.payment-card h3 {
+	font-size: 17px;
+	color: #333;
+}
+.payment-card p {
+	font-size: 12px;
+	color: #555;
+}
+
+.payment-card img {
+	max-width: 100px;
+}
+
+.payment-card.active,
+.item-prolong.active {
+	background: #F9DE91;
+	border: 1px solid #F9DE91;
+}
+
+.payment-card.gray {
+	border: 1px dashed #aaa;
+}
+
+.payment-card.gray:hover {
+	background: #fff5db;
+}
+
+.payment-card:hover,
+.item-prolong:hover {
+	background: #F9DE91;
+}
+
+.payment-card.gray h3{
+	color: #ccc;
+}
+
+/* CHECKBOX BUY PRESENT */
+
+.check-subscribe {
+	display: flex;
+	margin: 15px 0 0 10px;
+}
+
+.checkbox {
+	position: relative;
+	margin-right: 10px;
+	width: 15px;
+	height: 15px;
+	border-radius: 2px;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.checkbox img {
+	position: absolute;
+	width: 20px;
+	top: -9px;
+	left: 1px;
+}
+
+.checkbox.checked {
+	border: 1px solid #F5D595;
+}
+
+.item-prolong {
+	position: relative;
+	margin: 10px;
+	min-width: 170px;
+	max-width: 170px;
+	padding: 15px 10px;
+	border: 1px dashed #333;
+	cursor: pointer;
+}
+
+/* .item-prolong.active {
+	background: #F9DE91;
+	border: 1px solid #F9DE91;
+} */
+
+.item-prolong img {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+}
+
+.prolong-time {
+	font-size: 14px;
+}
+
+.prolong-price {
+	margin-top: 5px;
+	font-size: 15px;
+	color: #8C5D53;
+}
+
+.prolong-per {
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+.prolong-per-price {
+	font-size: 24px;
+}
+
+.auto-desc {
+	margin: 10px 0 15px 10px;
+	font-size: 15px;
+	line-height: 1.3em;
+	color: #5F6062;
+}
+
+.prolong-subs-wrap,
+.total-wrap {
+	margin-left: 10px;
+}
+
+.small-desc {
+	margin-left: 25px;
+	font-size: 15px;
+	line-height: 1.3em;
+	color: #5F6062;
+}
+
+.prolong-subs-checkbox {
+	display: flex;
+	margin-bottom: 5px;
+}
+
+.prolong-subs-checkbox-wrap,
+.discount-wrap {
+	display: flex;
+}
+.total-wrap .section-title {
+	margin-left: 0;
+}
+
+.discount-wrap {
+	margin-top: 20px;
+}
+
+.total-price {
+	margin-bottom: 5px;
+	color: #BEBEBE;
+	font-size: 32px;
+	font-weight: bold;
+}
+.total-price .total-price-amount {
+	color: #000;
+}
+.rub {
+	color: #000;
+	font-size: 18px;
+}
+
+.pre-footer {
+	padding: 35px;
+	background: #EDF1F4;
+}
+
+.pre-footer h5 {
+	max-width: 270px;
+	line-height: 1.5em;
+	color: #718798;
+	font-size: 14px;
+}
+
+.pre-footer-desc {
+	display: flex;
+}
+
+.pay-btn {
+	padding: 15px 35px;
+    color: #6f571b;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #feeaa5;
+    background: url('img/ribbing-pattern.png') repeat, linear-gradient(0deg, #fcbd10, #fee487);
+    line-height: 1;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 2px 0 #b09641;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 24px;
+}
+
+.pay-btn:active {
+	box-shadow: inset 0px 2px 5px 0px #b09641;
+}
+
+footer {
+	margin-top: 25px;
+	border-top: 1px solid #E0D8CB;
+}
+
+.footer-wrap {
+	padding: 15px 0;
+	font-size: 14px;
+	color: #656668;
+}
+
+.copy {
+	margin-right: 25px;
+}
+
+.service {
+	text-decoration: underline;
+}
